@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- ==============================================
+        Basic Page Needs
+        =============================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+
+        <title>Leverage - Your next level of website building</title>
+
+        <meta name="description" content="Creative Agency, Portfolio, Corporate, Startup & Technology">
+        <meta name="subject" content="Creative Agency, Portfolio, Corporate, Startup & Technology">
+        <meta name="author" content="Codings">
+
+        <!-- ==============================================
+        Favicons
+        =============================================== -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+        <!-- ==============================================
+        Vendor Stylesheet
+        =============================================== -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/slider.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/vendor/icons.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/animation.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/gallery.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/cookie-notice.min.css">
+		<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+        <!-- ==============================================
+        Custom Stylesheet
+        =============================================== -->
+        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/theme-pink.css">
+	  
+        <!-- ==============================================
+        Theme Settings
+        =============================================== -->
+        <style>
+						html {
+  scroll-behavior: smooth;
+}
+            :root {
+                --primary-color: #dd1e4b;
+                --secondary-color: #E0040B;
+
+                --header-bg-color: #16161c;
+                --nav-item-color: #f5f5f5;
+                --top-nav-item-color: #f5f5f5;
+                --hero-bg-color: #111111;
+
+                --section-1-bg-color: #191919;
+
+                --card-bg-color: #16161c;
+            
+                --footer-bg-color: #111117;
+            }
+
+            body {
+                background-color: #191919;
+            }
+
+            header .navbar-sticky {
+                opacity: 0;
+            }
+
+            h1, .slide-content .title {
+                font-size: 5rem;
+                max-width: 1040px;
+                margin: auto;
+            }
+
+            h4 {
+                font-size: 1.4rem;
+            }
+
+            h5 {
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: var(--primary-p-color);
+            }
+
+            .thin {
+                font-weight: 400;
+            }
+
+            header .navbar-expand .navbar-brand i.version-number {
+                color: #dd1e4b;
+            }
+
+            .btn.bigger {
+                font-family: 'Gilroy', sans-serif;
+                font-size: 1.2rem;
+            }
+
+            header .primary-button:hover,
+            .hero .primary-button:hover {
+                background-image: none;
+                background-color: #dd1e4b;
+                border-color: #dd1e4b;
+            }
+
+            .hero .effect-static-text {
+                color: #f5f5f5;
+                -webkit-text-fill-color: #f5f5f5;
+                background: none;
+            }
+
+            .hero .icon {
+                color: var(--primary-color);
+            }
+
+            section.featured:after {
+                content: '';
+                position: absolute;
+                z-index: 2;
+                bottom: -50px;
+                left: 50%;
+                left: calc(50% - 2.5px);
+                width: 5px;
+                height: 100px;
+                background-image: -webkit-linear-gradient(45deg, #dd1e4b 15%, #E0040B 65%);
+                background-image: linear-gradient(45deg, #dd1e4b 15%, #E0040B 65%);
+            }
+
+            .offers .card {
+                padding: 35px 35px 40px;
+            }
+
+            .showcase .card .image-over img {
+                height: auto;
+            }
+
+            .showcase .card:hover .image-over:before,
+            .showcase .card:not(.no-hover):hover {
+                background: -webkit-linear-gradient(45deg, #040402 15%, #111111 65%);
+                background: linear-gradient(45deg, #040402 15%, #111111 65%);
+            }
+
+            .showcase .card .btn.smaller {
+                width: 50%;
+            }
+
+            .showcase .card .btn.smaller:last-child {
+                margin: 0 0 0 5px;
+            }
+            
+            .showcase .card .btn.smaller:first-child {
+                margin: 0 5px 0 0;
+            }
+
+            @media(max-width: 768px) {
+                .showcase .card .btn.smaller {
+                    width: fit-content;
+                }
+            }
+
+            .gdpr-cookie-notice {
+                display: none;
+            }
+
+            .pretitle {
+                display: block;
+                margin: 0 0 1rem;
+                color: var(--primary-color);
+            }
+
+			/* Style the body */
+			body {
+			  font-family: Arial;
+			  font-size: 18px;
+			  margin: 0;
+			}
+
+			/* Header/Logo Title */
+			.heade {
+			  text-align: center;
+			  background: #1c712f;
+			  position: fixed;
+			  color: white;			  
+			}
+
+			/* Page Content */
+			.content {padding:20px;}
+
+			.announcement-bar__messag {
+			  color: #ffffff;
+			  display: block;
+			  padding: 11px 22px;
+			  font-size: 0.88889em;
+			  line-height: 1.5;
+			  margin-top: 0px;
+			  font-weight: 700; }
+			  @media only screen and (min-width: 750px) {
+				.announcement-bar__messag {
+				  padding-left: 65px;
+				  padding-right: 65px; } }
+						@media(max-width: 1024px) {
+							.hide-1024 {
+								display: none;
+							}
+						}
+        </style>
+		<script>
+  $(function() {
+
+    $('.ttt').click(function() {
+       $('.card').removeClass('active');
+    })
+
+
+  })
+</script>
+        
+    </head>
+
+    <body>
+
+        <!-- Preloader -->
+        <div data-timeout="3000" class="odd preloader counter">
+            <div data-aos="fade-up" data-aos-delay="200" class="row justify-content-center text-center items">
+                <div data-percent="100" class="radial">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+
+		   <nav class="navbar navbar-expand navbar-fixed">
+                <div class="container header">
+
+                    <!-- Navbar Brand-->
+                    <a class="navbar-brand" href="/">
+                        The Smart<i class="version-number">Furniture</i>
+                        <!-- 
+                            Custom Logo
+                            <img src="assets/images/logo.svg" alt="Leverage">
+                        -->
+                    </a>
+
+                    <!-- Nav holder -->
+                    <div class="ml-auto"></div>
+
+                    <!-- Navbar Action -->
+                   <ul class="navbar-nav ms-auto">
+                          <a href="#demos" class="btn ml-lg-auto primary-button"> 
+						  Menu&nbsp
+						  <i class="fas fa-bars"></i>
+						  </a>
+						  
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- Hero -->
+        <section id="slider" class="hero p-0 odd featured">
+            <div class="swiper-container no-slider slider-h-100">
+                <div class="swiper-wrapper">
+
+                    <!-- Item 1 -->
+                    <div class="swiper-slide slide-center">
+
+                        <video class="full-image" data-mask="10" playsinline autoplay muted loop>
+                            <source src="assets/videos/colors.mp4" type="video/mp4" />
+                        </video> 
+
+                        <div class="slide-content row text-center">
+                            <div class="col-12 mx-auto inner">
+                                <div class="center align-self-center text-center">
+
+                                    <h1 class="title effect-static-text">The readymade furniture shop</h1>
+                                    
+                                    <div class="hide-1024 row mt-4 justify-content-center text-center items">
+                                       
+                                    </div>
+                                    
+                           
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Demos -->
+        <section id="demos" class="section-1 showcase portfolio blog-grid odd featured filter-section">
+            <div class="overflow-holder">
+                <div class="container full-grid">
+                    <div class="row text-center intro">
+                        <div class="col-12">
+                            <span class="pretitle">The most authentic template on the market</span>
+                            <h2>Build Something Today</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn active">
+                                    <input type="radio" value="all" checked class="btn-filter-item">
+                                    <span>All</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="sofa" class="btn-filter-item">
+                                    <span>Sofa</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="bed" class="btn-filter-item">
+                                    <span>Bed</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="cupboard" class="btn-filter-item">
+                                    <span>Cupboard</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="table" class="btn-filter-item">
+                                    <span>Table</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="chair" class="btn-filter-item">
+                                    <span>Chair</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" value="fullfurniture" class="btn-filter-item">
+                                    <span>Full Furniture</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid -->
+                    <div class="row items filter-items" >
+
+                        <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["bed"]'>
+                              <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/B1.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Storage Bed</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        Price starts from 10,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                             <!--            <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a> -->
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["bed"]'>
+                            <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/B2.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Double Bed</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        Price starts from 7,000                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                 <!--        <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a> -->
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["bed"]'>
+                            <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/B3.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Single Bed</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 3,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["bed"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/B4.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Steel Bed</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 11,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["chair"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/C1.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Office Chair</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 7,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" id="test" data-groups='["chair"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/C2.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Wooden Chair</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 4,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["chair"]'>
+                              <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/C3.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Plastic Chair</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                      Price starts from 500                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["chair"]'>
+                            <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/C4.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Canteen Chair</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 1000                                  </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["cupboard"]'>
+                              <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/CP1.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Metal Cupboard</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                      Price starts from 15,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["cupboard"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/CP2.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Wooden Cupboard</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        Price starts from 11,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["cupboard"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/CP3.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Simple Cupboard</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 7,000                                  </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["cupboard"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/CP4.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Kitchen Cupboard</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 20,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["fullfurniture"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/F1.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Full Furniture</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 70,000                                  </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["fullfurniture"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/F2.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Full Furniture</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                      Price starts from 80,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["fullfurniture"]'>
+                              <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/F3.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Full Furniture</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 90,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["fullfurniture"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/F4.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Full Furniture</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        Price starts from 100,000                                  </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+						                    <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["table"]'>
+                              <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/T1.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Dinning Table</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 7,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+						                    <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["table"]'>
+                              <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/T2.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">TV Table</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                      Price starts from 7,000                                  </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+						                    <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["table"]'>
+                              <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/T3.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Glass Table</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                        Price starts from 3,000                                 </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+						                    <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["table"]'>
+                              <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/T4.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Stylish Table</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 5,000                                 </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+						                    <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["table"]'>
+                              <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/T5.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Computer Table</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                      Price starts from 2,000                                  </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["sofa"]'>
+                              <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/S1.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Sofa Cum Bed</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 25,000                                   </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["sofa"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/S2.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Formal Sofa Set</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 30,000                                 </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["sofa"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/S3.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">3 Seater Sofa</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 15,000                                 </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+						                        <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["sofa"]'>
+                             <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/S4.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Steel Sofa</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 20,000                                 </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                                <div class="col-12 col-md-6 col-lg-3 item filter-item" data-groups='["sofa"]'>
+                            <div class="row card p-0 text-center">
+                                <div class="image-over">
+                                    <img src="assets/images-intro/S5.jpg" alt="Demo 2">
+                                </div>
+                                <div class="card-caption col-12 p-0">
+                                    <div class="card-body">
+                                        <h4 class="m-0">Full Sofa Set</h4>
+                                    </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+                                       Price starts from 50,000                                  </div>
+                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
+<!--                                         <a href="#portfolio" target="_blank" class="btn smaller primary-button">Close</a>
+ -->                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </section>
+
+ <section class="hero p-0 odd">
+            <div class="swiper-container no-slider slider-h-100">
+                <div class="swiper-wrapper">
+
+                    <!-- Item 1 -->
+                    <div class="swiper-slide slide-center">
+
+                        <!-- Particles -->
+                        <div id="particles-1" class="particles full-image" data-particle="bubble" data-mask="70"></div>  
+
+                        <video class="full-image" data-mask="10" playsinline autoplay muted loop>
+                            <source src="assets/videos/colorssss.mp4" type="video/mp4" />
+                        </video> 
+
+                        <div class="slide-content row text-center">
+                            <div class="col-12 mx-auto inner">
+                                <div class="center align-self-center text-center">
+
+                                    <h2 class="title effect-static-text">Contact US.</h2>
+                                    
+                                    <div class="row mt-4 justify-content-center text-center items">
+                                        <div class="col-12 col-md-6 col-lg-4 item">
+                                            <div class="card no-hover">
+                                              
+                                                <h4>Location</h4>
+                                                <h5>995 XYZ complex Dahisar Road Mumbai PIN 65243</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 item">
+                                            <div class="card no-hover">
+                                           
+                                              
+                        <h4>Around the Web</h4>
+                  <!--      <a href="#demos" class="btn ml-lg-auto primary-button"> <i class="fab fa-fw fa-facebook-f"></i></a>
+					    <a href="#demos" class="btn ml-lg-auto primary-button"> <i class="fab fa-fw fa-facebook-f"></i></a>
+						 <a href="#demos" class="btn ml-lg-auto primary-button"> <i class="fab fa-fw fa-facebook-f"></i></a>
+						  <a href="#demos" class="btn ml-lg-auto primary-button"> <i class="fab fa-fw fa-facebook-f"></i></a> -->
+						  
+						     <div class="buttons mt-4 d-sm-inline-flex justify-content-center">
+                                    <a href="https://www.facebook.com/" class="btn ml-lg-auto primary-buttonn"><i class="fab fa-fw fa-facebook-f"></i></a>
+                                    <a href="https://api.whatsapp.com/send?phone=919988776644" class="btn ml-lg-auto primary-buttonn"><i class="fab fa-fw fa-whatsapp"></i></a>
+									     <a href="tel:+91 9988776644" class="btn ml-lg-auto primary-buttonn"><i class="fa fa-phone"></i></a>
+                                    <a href="https://www.instagram.com/" class="btn ml-lg-auto primary-buttonn"><i class="fab fa-fw fa-instagram"></i></a>
+                                    </div>
+					   
+                       <!--  <a href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a href="#!"><i class="fab fa-fw fa-dribbble"></i></a> -->
+                 
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 item">
+                                            <div class="card no-hover">
+                                        
+                                                <h4>Mobile Number</h4>
+                                                <h5>+91 9988776655</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- #region Global ============================ -->
+
+        <!-- Modal [search] -->
+        <div id="search" class="p-0 modal fade" role="dialog" aria-labelledby="search" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+                <div class="modal-content full">
+                    <div class="modal-header" data-dismiss="modal">
+                        Search <i class="icon-close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row">
+                            <div class="col-12 p-0 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 p-0 pb-3">
+                                        <h2>What are you looking for?</h2>
+                                        <p>Search for services and news about the best that happens in the world.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="text" class="form-control" placeholder="Enter Keywords">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group align-self-center">
+                                        <button class="btn primary-button"><i class="icon-magnifier"></i>SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal [sign] -->
+        <div id="sign" class="p-0 modal fade" role="dialog" aria-labelledby="sign" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+                <div class="modal-content full">
+                    <div class="modal-header" data-dismiss="modal">
+                        Sign In Form <i class="icon-close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/" class="row">
+                            <div class="col-12 p-0 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 p-0 pb-3">
+                                        <h2>Sign In</h2>
+                                        <p>Don't have an account? <a href="#" class="primary-color" data-toggle="modal" data-target="#register">Register now</a>.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="password" class="form-control" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group align-self-center">
+                                        <button class="btn primary-button"><i class="icon-login"></i>LOGIN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal [register] -->
+        <div id="register" class="p-0 modal fade" role="dialog" aria-labelledby="register" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+                <div class="modal-content full">
+                    <div class="modal-header" data-dismiss="modal">
+                        Register Form <i class="icon-close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/" class="row">
+                            <div class="col-12 p-0 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 p-0 pb-3">
+                                        <h2>Register</h2>
+                                        <p>Have an account? <a href="#" class="primary-color" data-toggle="modal" data-target="#sign">Sign In</a>.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="text" class="form-control" placeholder="Name" required>
+                                    </div>
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="password" class="form-control" placeholder="Password" required>
+                                    </div>
+                                    <div class="col-12 p-0 input-group">
+                                        <input type="password" class="form-control" placeholder="Confirm Password" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0 input-group align-self-center">
+                                        <button class="btn primary-button"><i class="icon-rocket"></i>REGISTER</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal [responsive menu] -->
+        <div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+                <div class="modal-content full">
+                    <div class="modal-header" data-dismiss="modal">
+                        Menu <i class="icon-close"></i>
+                    </div>
+                    <div class="menu modal-body">
+                        <div class="row w-100">
+                            <div class="items p-0 col-12 text-center">
+                                <!-- Append [navbar] -->
+                            </div>
+                            <div class="contacts p-0 col-12 text-center">
+                                <!-- Append [navbar] -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll [to top] -->
+        <div id="scroll-to-top" class="scroll-to-top">
+            <a href="#header" class="smooth-anchor">
+                <i class="icon-arrow-up"></i>
+            </a>
+        </div>        
+        
+        <!-- ==============================================
+        Google reCAPTCHA // Put your site key here
+        =============================================== -->
+        <script src="https://www.google.com/recaptcha/api.js?render=6Lf-NwEVAAAAAPo_wwOYxFW18D9_EKvwxJxeyUx7"></script>
+
+        <!-- ==============================================
+        Vendor Scripts
+        =============================================== -->
+        <script src="assets/js/vendor/jquery.min.js"></script>
+        <script src="assets/js/vendor/jquery.easing.min.js"></script>
+        <script src="assets/js/vendor/jquery.inview.min.js"></script>
+        <script src="assets/js/vendor/popper.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/ponyfill.min.js"></script>
+        <script src="assets/js/vendor/slider.min.js"></script>
+        <script src="assets/js/vendor/animation.min.js"></script>
+        <script src="assets/js/vendor/progress-radial.min.js"></script>
+        <script src="assets/js/vendor/bricklayer.min.js"></script>
+        <script src="assets/js/vendor/gallery.min.js"></script>
+        <script src="assets/js/vendor/shuffle.min.js"></script>
+        <script src="assets/js/vendor/cookie-notice.min.js"></script>
+        <script src="assets/js/vendor/particles.min.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <!-- #endregion Global ========================= -->
+
+    </body>
+</html>
