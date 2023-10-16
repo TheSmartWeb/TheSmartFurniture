@@ -327,7 +327,7 @@ h4 {
 }
 
 h5 {
-    margin: 1.5rem 0;
+ /*    margin: 1.5rem 0; */
     font-size: 1.2rem;
     font-weight: var(--h2-weight);
     line-height: 1.2;
